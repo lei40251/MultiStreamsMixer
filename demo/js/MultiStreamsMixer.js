@@ -1,4 +1,4 @@
-// Last time updated: 2022-06-24 4:48:09 AM UTC
+// Last time updated: 2019-06-24 6:39:09 PM UTC
 
 // ________________________
 // MultiStreamsMixer v1.2.3
@@ -117,13 +117,13 @@ function MultiStreamsMixer(arrayOfMediaStreams, elementClass) {
 
     var canvas = document.createElement('canvas');
     var context = canvas.getContext('2d');
-    // canvas.style.opacity = 0;
-    // canvas.style.position = 'absolute';
-    // canvas.style.zIndex = -1;
-    // canvas.style.top = '-1000em';
-    // canvas.style.left = '-1000em';
-    // canvas.className = elementClass;
-    // (document.body || document.documentElement).appendChild(canvas);
+    canvas.style.opacity = 0;
+    canvas.style.position = 'absolute';
+    canvas.style.zIndex = -1;
+    canvas.style.top = '-1000em';
+    canvas.style.left = '-1000em';
+    canvas.className = elementClass;
+    (document.body || document.documentElement).appendChild(canvas);
 
     this.disableLogs = false;
     this.frameInterval = 10;
